@@ -25,7 +25,7 @@ header {
 }
 
 header h1 {
-    color: #7b61f0;
+    color: #0d6fa8;
     font-size: 3.5rem;
     font-family: 'Poppins';
 }
@@ -209,6 +209,7 @@ main .about {
 }
 
 .about img {
+    animation: ladoSecao .5s ease-in-out forwards;
     cursor: pointer;
     grid-row: 2;
     max-width: 70%;
@@ -265,7 +266,7 @@ main .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column: 1/-1;
-    gap: 15px;
+    gap: 12px;
     align-items: center;
 }
 
@@ -277,7 +278,7 @@ main .about {
 }
 
 .about_info p {
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 @keyframes aboutSection {
@@ -290,15 +291,25 @@ main .about {
     }
 }
 
+@keyframes ladoSecao {
+    from {
+        transition: .5s;
+        transform: translate3d(-60px, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
 
 /* RESPONSIVO */
 
 @media(max-width: 992px) {
-    .section-div img {
+    .section-div .back-video {
         display: none;
     }
     .section-div {
-        background-image: url(img/imgperfil01.JPEG);
+        background-image: url(imgs/videoev3.MP4);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -752,7 +763,7 @@ main .about {
     color: #707070;
 }
 
-.project_models ul li.ativo {
+.projects_models ul li.ativo {
     background-color: #0d6fa8;
     color: #151515;
     font-weight: bold;
@@ -794,7 +805,7 @@ main .about {
 }
 
 @keyframes animationButton {
-    0% {
+    100% {
         opacity: 0;
         transform: translate3d(0, -90px, 0);
     }
