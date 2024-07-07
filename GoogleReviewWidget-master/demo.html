@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/grw-styles.css">
+<script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&libraries=places"></script>
+<script src="src/grw.js"></script>
+	
+</head>
+
+<body>
+	<div id="widget"></div>
+	<script>
+		$GrwJS.init({
+			target:'https://maps.app.goo.gl/pGxEod7oyAKZTHDPA',
+			placeid:'ChIJpcanZ0L2wokRoWs8p9gEJcM', 
+			theme:'dark',
+			numOfWords:30,
+			horizontal:true,
+			autoScroll:true
+		});
+	</script>
+</body>
+</html>
